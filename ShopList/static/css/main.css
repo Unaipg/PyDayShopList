@@ -1,0 +1,111 @@
+body{
+    background-color: greysmoke;
+}
+
+.add-bug{
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.user-list {
+  margin-bottom: 20px; }
+
+.list-item {
+  border-bottom: 1px solid black;
+  padding: 10px 0 10px 0;
+  background-color: aliceblue; }
+  .list-item .capital {
+    font-size: 200%; }
+  .list-item .name {
+    padding-top: 15px; }
+  .list-item .icons {
+    padding-top: 5px; }
+    .list-item .icons a {
+      font-size: 150%;
+      padding: 0 10px 0 10px; }
+
+.list-item:last-of-type {
+  border-bottom: 0px; }
+
+.list-item:nth-child(2n) {
+  background-color: white; }
+
+.bug-title{
+    margin-top: 10px;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.bug-title a{
+    color: black;
+}
+
+.fi-alert{
+    color: red !important;
+}
+
+.bug-description{
+    border: 1px solid black;
+    min-height: 300px;
+    padding-top: 20px;
+}
+
+.bug-info{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    min-height: 300px;
+}
+
+.bug-info-item{
+    border-top: 1px solid black;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.username{
+    font-weight: bold;
+}
+
+.comment-section{
+    margin-top: 30px;
+}
+
+.comment-body{
+    padding-top: 15px;
+}
+
+.new-comment{
+    margin-top: 30px;
+}
+.middle-title{
+    margin-top: 80px;
+}
+
+.completed-list-item{
+  border-bottom: 1px solid black;
+  padding: 10px 0 10px 0;
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.completed-list-item:last-of-type {
+  border-bottom: 0px; }
+
+.completed-list-item:nth-child(2n) {
+  background-color: white; }
+
+.bug-title{
+    margin-top: 10px;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.add-item{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    border-radius: 52px;
+    font-size: 20px;
+}

@@ -1,0 +1,53 @@
+<div class="row">
+    <button ui-sref="add-item" class='button add-item'>+</button>
+    <div class="text-center">
+        <h1> Lista de la compra </h1>
+    </div>
+    <hr>
+
+    <div class="small-10 small-offset-1 medium-8 medium-offset-2 columns end">
+        <h3>Pendiente</h3>
+        <div class="list-item row">
+            <div class="item-title small-6 columns text-center">Artículo</div>
+            <div class="icons small-2 columns text-center">Cantidad</div>
+            <div class="icons small-2 columns text-center">Usuario</div>
+            <div class="icons small-2 columns text-center">¿Comprado?</div>
+        </div>
+        <div ng-repeat='item in pending_items' class="list-item row" nganimate>
+            <div class="item-title small-6 columns text-center">
+                {{item.name}}
+            </div>
+            <div class="icons small-2 columns text-center">
+                {{item.qty}}
+            </div>
+            <div class="icons small-2 columns text-center">
+                {{item.username}}
+            </div>
+            <div class="icons small-2 columns text-center">
+                <button class="button" type="button" name="button" ng-click="toggleState(item)">Comprado</button>
+            </div>
+        </div>
+
+        <h3 class="middle-title">Compradas</h3>
+        <div class="completed-list-item row">
+            <div class="item-title small-6 columns text-center">Artículo</div>
+            <div class="icons small-2 columns text-center">Cantidad</div>
+            <div class="icons small-2 columns text-center">Usuario</div>
+            <div class="icons small-2 columns text-center">¿Comprado?</div>
+        </div>
+        <div ng-repeat='item in completed_items' class="completed-list-item row">
+            <div class="item-title small-6 columns text-center">
+                {{item.name}}
+            </div>
+            <div class="icons small-2 columns text-center">
+                {{item.qty}}
+            </div>
+            <div class="icons small-2 columns text-center">
+                {{item.username}}
+            </div>
+            <div class="icons small-2 columns text-center">
+                <button class="button" type="button" name="button" ng-click="toggleState(item)">Otro!</button>
+            </div>
+        </div>
+    </div>
+</div>
