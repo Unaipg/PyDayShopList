@@ -30,16 +30,17 @@
 
         <h3 class="middle-title">Compradas</h3>
         <div class="completed-list-item row">
-            <div class="item-title small-6 columns text-center">Artículo</div>
-            <div class="icons small-2 columns text-center">Cantidad</div>
+            <div class="item-title small-5 columns text-center">Artículo</div>
+            <div class="icons small-1 columns text-center">Cantidad</div>
             <div class="icons small-2 columns text-center">Usuario</div>
             <div class="icons small-2 columns text-center">¿Comprado?</div>
+            <div class="icons small-2 columns text-center">Borrar</div>
         </div>
         <div ng-repeat='item in completed_items' class="completed-list-item row">
-            <div class="item-title small-6 columns text-center">
+            <div class="item-title small-5 columns text-center">
                 {{item.name}}
             </div>
-            <div class="icons small-2 columns text-center">
+            <div class="icons small-1 columns text-center">
                 {{item.qty}}
             </div>
             <div class="icons small-2 columns text-center">
@@ -47,6 +48,9 @@
             </div>
             <div class="icons small-2 columns text-center">
                 <button class="button" type="button" name="button" ng-click="toggleState(item)">Otro!</button>
+            </div>
+            <div class="icons small-2 columns text-center">
+                <button class="button" type="button" name="button" ng-click="delete(item)">Borrar</button>
             </div>
         </div>
     </div>

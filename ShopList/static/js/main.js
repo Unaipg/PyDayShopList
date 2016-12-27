@@ -67,6 +67,11 @@ app.controller('MainCtrl',[
             Items.update(item);
         }
 
+        $scope.delete = function(item){
+            $scope.completed_items.splice($scope.completed_items.indexOf(item), 1);
+            Items.delete(item.id);
+        }
+
         Items.all().then(function(res){
             $scope.pending_items = res.data.filter(function(item){
                 return !item.state;
